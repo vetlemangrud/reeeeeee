@@ -1,0 +1,25 @@
+{
+  "name": "reeeeeee",
+  "version": "1.0.0",
+  "description": "Simple slack bot for backing up memes to Google Drive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vetlemangrud/reeeeeee.git"
+  },
+  "author": "Vetle Roos Mangrud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vetlemangrud/reeeeeee/issues"
+  },
+  "homepage": "https://github.com/vetlemangrud/reeeeeee#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "slackbots": "^1.2.0"
+  }
+}
