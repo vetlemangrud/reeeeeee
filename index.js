@@ -1,4 +1,3 @@
-const SlackBot = require('slackbots');
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
 
-dotenv.config()
+dotenv.config();
