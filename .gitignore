@@ -105,3 +105,6 @@ dist
 
 #Heroku
 Procfile
+
+#For api testing
+.http
