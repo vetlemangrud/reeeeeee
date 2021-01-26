@@ -107,4 +107,4 @@ dist
 Procfile
 
 #For api testing
-.http
+apitest.http
