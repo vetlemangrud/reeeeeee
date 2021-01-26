@@ -1,20 +1,17 @@
-const dotenv = require('dotenv');
-const express = require("express");
-const bodyParser = require('body-parser');
-const app = express();
-app.use( bodyParser.json() );
-app.use(bodyParser.urlencoded({ extended: true }));
-
+const dotenv = require("dotenv")
+const { App } = require('@slack/bolt');
 dotenv.config();
 
-app.get('/', (req, res) => {
-    res.send(req.query)
-})
+const app = new App({
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
+  token: process.env.SLACK_BOT_TOKEN,
+}); 
 
-app.post("/", (req, res) => {
-    res.send(req.body.challenge);
-})
-  
-app.listen(process.env.PORT, () => {
-    console.log(`Example app listening at http://localhost:`+process.env.PORT)
-})
+/* Add functionality here */
+
+(async () => {
+  // Start the app
+  await app.start(process.env.PORT || 3000);
+
+  console.log('⚡️ Bolt app is running!');
+})();
